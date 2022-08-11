@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+<div id="container">
+    <h1>Calculadora de Soma </h1>
+
+    <input type="number" name="numero1" id="numero1">
+    <input type="number" name="numero2" id="numero2">
+    <input type="button" onclick="soma()" value="soma">
+
+</div>
+<div class="resultado"></div>
+
+</body>
+
+<script>
+
+    window.alert('Bem vindo ao programa de calculadora de soma');
+    let nome = window.prompt('Qual seu nome')
+    window.alert(`seu tem ${nome.length} caracteres. E seu nome em maíusculo fica ${nome.toUpperCase()}`)
+
+
+    function soma() {
+        let n1 = Number(document.getElementById('numero1').value)
+        let n2 = Number(document.getElementById('numero2').value)
+        let soma = n1+n2
+        let resultado = document.write(`O resultado de ${n1} e ${n2} é igual a ${soma}`)
+        
+        
+    }
+
+</script>
+
+
+</html>
